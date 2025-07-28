@@ -35,7 +35,6 @@ const presets = {
 };
 
 const ThumbnailCreator = () => {
-  const [selectedStyle, setSelectedStyle] = useState("style1");
   const [loading, setLoading] = useState(false);
   const [imageSrc, setImageSrc] = useState<string | null>(null);
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -44,7 +43,6 @@ const ThumbnailCreator = () => {
   );
   const [canvasReady, setCanvasReady] = useState(false);
   const [text, setText] = useState("POV");
-  const [font, setFont] = useState("arial");
 
   const setSelectedImage = async (file?: File) => {
     if (file) {
