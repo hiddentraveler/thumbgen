@@ -86,14 +86,6 @@ const ThumbnailCreator = () => {
       ctx.drawImage(bgImg, 0, 0, canvas.width, canvas.height);
 
       let preset = presets.style1;
-      switch (selectedStyle) {
-        case "style2":
-          preset = presets.style2;
-          break;
-        case "style3":
-          preset = presets.style3;
-          break;
-      }
 
       ctx.save();
 
