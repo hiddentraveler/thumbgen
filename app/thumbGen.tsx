@@ -85,7 +85,7 @@ const ThumbnailCreator = () => {
 
       ctx.drawImage(bgImg, 0, 0, canvas.width, canvas.height);
 
-      let preset = presets.style1;
+      const preset = presets.style1;
 
       ctx.save();
 
@@ -94,7 +94,7 @@ const ThumbnailCreator = () => {
       ctx.textBaseline = "middle";
 
       let fontSize = 100;
-      let selectFont = "arial";
+      const selectFont = "arial";
 
       ctx.font = `${preset.fontWeight} ${fontSize}px ${selectFont}`;
       const textWidth = ctx.measureText(text).width;
